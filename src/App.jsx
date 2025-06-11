@@ -1,12 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  
   return (
     <>
-      <h1>Hola Mundo</h1>
+      <main className="container my-4">
+        <h1 className="text-center">Lista de Tareas</h1>
+      </main>
+      <footer className="bg-dark text-light text-center py-3">
+        <p>&copy;Todos los derechos reservados</p>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
