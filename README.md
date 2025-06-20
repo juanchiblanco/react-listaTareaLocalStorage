@@ -1,12 +1,63 @@
-# React + Vite
+# ✅🗃️ React - Lista de Tareas con LocalStorage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
 
-Currently, two official plugins are available:
+Este proyecto es una extensión de la clásica **to-do list en React**, con la novedad de que:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Las tareas **se almacenan en el localStorage** del navegador.
+- 🔁 Al recargar la página, las tareas se **conservan** y se muestran automáticamente.
+- ✏️ El usuario puede ingresar nuevas tareas desde un input y agregarlas presionando **Enter**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Objetivos del proyecto
+
+- Profundizar en el uso del **estado** y **ciclo de vida** en React.
+- Utilizar el **localStorage** del navegador para **persistencia de datos**.
+- Practicar la gestión de eventos y el renderizado dinámico de listas.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **React JS**
+- **JavaScript (ES6+)**
+- **HTML5 + CSS3**
+- *(Opcional)* Bootstrap o TailwindCSS para diseño y estilos
+
+---
+
+## ▶️ Ejecución del Proyecto
+
+1. 📥 Clonar o descargar este repositorio.
+2. Abrir el proyecto en tu editor de código preferido.
+3. Instalar dependencias:
+
+bash
+npm install
+Ejecutar la app:
+
+bash
+Copiar
+Editar
+npm run dev
+Ingresar a la app desde el navegador: http://localhost:5173 o el puerto que indique la terminal.
+
+## 💾 ¿Cómo funciona el localStorage?
+Cuando el usuario agrega una tarea, esta se guarda en el localStorage en formato JSON.
+
+Al iniciar la aplicación, se recuperan las tareas previamente guardadas y se cargan al estado.
+
+Si se recarga la página, las tareas persisten.
+
+## 📦 Funcionalidades
+Input controlado para ingresar tareas.
+
+Manejo del evento Enter para agregar tareas.
+
+Renderizado de la lista en tiempo real.
+
+Persistencia automática de tareas con localStorage.
+
+## 👨‍💻 Autor
+Juan Manuel Blanco
