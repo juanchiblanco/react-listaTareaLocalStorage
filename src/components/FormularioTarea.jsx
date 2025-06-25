@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 const FormularioTarea = () => {
-  // const [tarea, setTarea] = useState('')
   const tareasLocalStorage = JSON.parse(localStorage.getItem("listaTareas")) || [];
   const [tareas, setTareas] = useState(tareasLocalStorage);
   const {
@@ -16,7 +15,6 @@ const FormularioTarea = () => {
   } = useForm();
 
   useEffect(() => {
-    //todas las lineas que escriba aqui se ejecuten en montaje y actualizacion del componente
     console.log("desde UseEffect");
     localStorage.setItem("listaTareas", JSON.stringify(tareas));
   }, [tareas]);
@@ -24,13 +22,11 @@ const FormularioTarea = () => {
   const agregarTareas = (data) => {
     console.log(data.inputTarea);
     setTareas([...tareas, data.inputTarea]);
-    // setTarea('')
     reset();
   };
 
   const borrarTarea = (nombreTarea) => {
     const tareasFiltradas = tareas.filter((item) => item !== nombreTarea);
-    //actualizar el estado tarea
     setTareas(tareasFiltradas);
   };
 
