@@ -15,7 +15,6 @@ const FormularioTarea = () => {
   } = useForm();
 
   useEffect(() => {
-    console.log("desde UseEffect");
     localStorage.setItem("listaTareas", JSON.stringify(tareas));
   }, [tareas]);
 
@@ -37,7 +36,6 @@ const FormularioTarea = () => {
           <Form.Control
             type="text"
             placeholder="Ingresa una tarea"
-            onChange={(e) => setTarea(e.target.value)}
             {...register("inputTarea", {
               required: "La tarea es un dato obligatorio",
               minLength: {
